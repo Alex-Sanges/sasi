@@ -6,18 +6,14 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp3.Lavrinenko
 {
-    /*class LogAbstract
-    {
-    }*/
     abstract public class LogAbstract
     {
         public string for_Log(String[] strings)
         {
             return formatLog(strings);
         }
-        protected /*String*/string formatLog(String[] strings)
+        protected string formatLog(String[] strings)
         {
-            //return strings + ";";
             return String.Join(";", strings);
 
         }
@@ -25,13 +21,11 @@ namespace ConsoleApp3.Lavrinenko
         protected void writeConsole(String s)
         {
             Console.WriteLine(s);
-            //System.out.println(s);
         }
 
         protected void writeConsole(String[] s)
         {
             Console.WriteLine(formatLog(s));
-            //System.out.println(formatLog(s));
         }
 
     }

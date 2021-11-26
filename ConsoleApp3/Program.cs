@@ -13,9 +13,6 @@ namespace ConsoleApp3.Lavrinenko
         {
             Get get = new Get();
             QuadEquations Quad = new QuadEquations();
-            //LogAbstract sas = new LogAbstract();
-            //var suck_static = new AlexeyLog();
-            //s
             try
             {
                 //
@@ -26,15 +23,12 @@ namespace ConsoleApp3.Lavrinenko
                     AlexeyLog.I().log("корни уравнения");
                     foreach (double x in solve)
                         AlexeyLog.I().log(String.Join(" x= ", x));
-                        // AlexeyLog.I().log()
-                        //LogAbstract().for_Log();
 
                 }
             }
-            catch (/*InvalidCastException e*/MynameException ex)
+            catch (MynameException ex)
             {
-                //string E = Convert.ToString(e);
-                AlexeyLog.I().log(Convert.ToString(ex)/*E*/);
+                AlexeyLog.I().log(Convert.ToString(ex));
                 Console.WriteLine("Ошибка: " + ex.Message);
             }
             //

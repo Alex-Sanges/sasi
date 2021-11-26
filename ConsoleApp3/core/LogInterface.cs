@@ -8,7 +8,7 @@ namespace ConsoleApp3.Lavrinenko
 {
     interface LogInterface
     {
-        /*public*/ LogInterface log(string str);
-        /*public*/ LogInterface write();
+        LogInterface log(string str);
+        LogInterface write();
     }
 }

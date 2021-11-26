@@ -17,7 +17,6 @@ namespace ConsoleApp3.Lavrinenko
             }
             return single;
         }
-        //public string[] mass;
         List<string> mass = new List<string>();
         public LogInterface log(string str)
         {
@@ -29,7 +28,6 @@ namespace ConsoleApp3.Lavrinenko
         {
             Console.Write(mass.ToArray());
             return this;
-            //throw new NotImplementedException();
         }
     }
 }
