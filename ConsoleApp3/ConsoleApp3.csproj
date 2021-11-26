@@ -48,16 +48,17 @@
     <Compile Include="core\EquationInterface.cs" />
     <Compile Include="core\LogAbstract.cs" />
     <Compile Include="core\LogInterface.cs" />
-    <Compile Include="Get.cs" />
-    <Compile Include="zhitie_moe\AlexeyLog.cs" />
-    <Compile Include="MynameException.cs" />
+    <Compile Include="_Lavrinenko_zhitie_moe\Get.cs" />
+    <Compile Include="_Lavrinenko_zhitie_moe\AlexeyLog.cs" />
+    <Compile Include="_Lavrinenko_zhitie_moe\MynameException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="zhitie_moe\LineEquation.cs" />
-    <Compile Include="zhitie_moe\QuadEquation.cs" />
+    <Compile Include="_Lavrinenko_zhitie_moe\LineEquation.cs" />
+    <Compile Include="_Lavrinenko_zhitie_moe\QuadEquation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

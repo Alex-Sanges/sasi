@@ -8,15 +8,7 @@ namespace ConsoleApp3.Lavrinenko
 {
     interface EquationInterface
     {
-        /*public*/ List<float> solve(float a, float b, float  c);
+        //List<float> solve(float a, float b, float  c);
+        List<double> solve(double a, double b, double c);
     }
 }
-/*namespace core
-{
-
-    interface EquationInterface
-    {
-        public List<float> solve(float a, float $b, float  $c);
-    }
-
-}*/

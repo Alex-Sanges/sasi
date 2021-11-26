@@ -7,13 +7,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp3.zhitie_moe
 {
-    class QuadEquations: LineEquations
+    class QuadEquations: LineEquations, EquationInterface
     {
         protected double x2;
-        public List<double> /*QuadEquation*/solve(double a, double b, double c)
+        public List<double> solve(double a, double b, double c)
         {
-            //try
-            //{
                 List<double> ArrX = new List<double>();
                 if (a == 0)
                 {
@@ -38,7 +36,6 @@ namespace ConsoleApp3.zhitie_moe
                     throw new MynameException("Ошибка: уравнение не имеет решений!");
                     //корней нет 
                 }
-            //var record = new AlexeyLog();
             AlexeyLog.I().log("Определено, что это квадратное уравнение");
             AlexeyLog.I().log("Корни уравнения:"+ArrX.ToArray());
                 return ArrX;
